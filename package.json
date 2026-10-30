@@ -1,0 +1,14 @@
+{
+  "name": "thephi-digital-agreement-portal",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace=@thephi/web & npm run dev --workspace=@thephi/api",
+    "build": "npm run build --workspaces",
+    "typecheck": "npm run typecheck --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "engines": { "node": ">=20" }
+}
